@@ -10,7 +10,7 @@
 
 void saveJPG(char *filename, GLuint w, GLuint h)
 {
-    int comp = 3; // 1: mono, 2: mono with alpha, 3: rgb, 4: rgba
+    int comp = 3; // 1: grayscale, 2: grayscale with alpha, 3: rgb, 4: rgba
     void* buf = NULL;
     buf = ( GLubyte* )malloc( w * h * comp );
 
@@ -35,7 +35,7 @@ void saveJPG(char *filename, GLuint w, GLuint h)
        stbi_write_jpg(char const *filename,
                       int x,                // width
                       int y,                // height
-                      int comp,             // 1: mono, 2: mono with alpha, 3: rgb, 4: rgba
+                      int comp,             // 1: grayscale, 2: grayscale with alpha, 3: rgb, 4: rgba
                       const void *data,     // buffer pointer
                       int stride_bytes);    // the length of a row (width * comp)
     */
