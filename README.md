@@ -39,6 +39,6 @@ void saveJPG(char *filename, GLuint w, GLuint h)
                       const void *data,     // buffer pointer
                       int stride_bytes);    // the length of a row (width * comp)
     */
-    stbi_write_jpg(filename, w, h, comp, flip, w * comp);
+    stbi_write_jpg(filename, w, h, comp, flip, wc);
 }
 ```
