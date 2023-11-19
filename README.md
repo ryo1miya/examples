@@ -16,7 +16,7 @@ void saveJPG(char *filename, GLuint w, GLuint h)
 
     glReadBuffer( GL_BACK ); // or GL_FRONT
 
-    // NOTE: glReadPixels turns the image upside-down
+    // NOTE: glReadPixels turns an image upside-down
     glReadPixels( 0,                 // x coordinate of the lower left corner of a rectangle
                   0,                 // y coordinate of the lower left corner of a rectangle
                   w,                 // width
