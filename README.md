@@ -45,7 +45,7 @@ void saveJPG(char *filename, GLuint w, GLuint h)
 }
 ```
 
-## glReadPixels and stbi_write_jpg
+## glReadPixels and stbi_write_png
 
 This example depends on [stb_image_write.h](https://github.com/nothings/stb) .
 
