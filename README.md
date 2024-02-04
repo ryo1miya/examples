@@ -1,6 +1,9 @@
-# my private examples (ABSOLUTELY NO WARRANTY)
+<h1 id="top">my private examples (ABSOLUTELY NO WARRANTY)</h1>
 
-## glReadPixels and stbi_write_jpg
+- [glReadPixels and stbi_write_jpg](#write_jpg)
+- [glReadPixels and stbi_write_png](#write_png)
+  
+<h2 id="write_jpg">glReadPixels and stbi_write_jpg</h2>
 
 This example depends on [stb_image_write.h](https://github.com/nothings/stb) .
 
@@ -44,6 +47,8 @@ void saveJPG(char *filename, GLuint w, GLuint h)
     stbi_write_jpg(filename, w, h, comp, flip, wc);
 }
 ```
+
+[back to top](#top)
 
 ## glReadPixels and stbi_write_png
 
@@ -89,3 +94,5 @@ void savePNG(char* filename, GLuint w, GLuint h)
     stbi_write_png(filename, w, h, comp, flip, wc);
 }
 ```
+
+[back to top](#top)
