@@ -2,7 +2,8 @@
 
 - [glReadPixels and stbi_write_jpg](#write_jpg)
 - [glReadPixels and stbi_write_png](#write_png)
-  
+- [mpg123 and fzf](#mpg123fzf)
+
 <h2 id="write_jpg">glReadPixels and stbi_write_jpg</h2>
 
 This example depends on [stb_image_write.h](https://github.com/nothings/stb) .
@@ -95,4 +96,17 @@ void savePNG(char* filename, GLuint w, GLuint h)
 }
 ```
 
+[back to top](#top)
+
+<h2 id="mpg123fzf">mpg123 and fzf</h2>
+
+assume m3u playlists are in `~/mp3`
+
+```shell
+mpg123 -v@ $(ls -1 ~/mp3/*.m3u | fzf)   # normal play
+```
+
+```shell
+mpg123 -vz@ $(ls -1 ~/mp3/*.m3u | fzf)  # shuffle play
+```
 [back to top](#top)
